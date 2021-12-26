@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="serif"
+        android:text="Выберите город вылета и прилёта"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        tools:text="Выберите город вылета и прилёта" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Spinner
+            android:id="@+id/flyout"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:entries="@array/cities"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="                          " />
+
+        <Spinner
+            android:id="@+id/flyin"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:textSize="30sp"
+            android:entries="@array/cities" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="                          "/>
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="serif"
+        android:text="Введите дату вылета и прилёта"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/DO"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:fontFamily="serif"
+            android:inputType="textPersonName"
+            android:text="Дата вылета"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="                          " />
+
+        <EditText
+            android:id="@+id/DI"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:fontFamily="serif"
+            android:inputType="textPersonName"
+            android:text="Дата прилёта"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="                          "/>
+
+    <TextView
+        android:id="@+id/Pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="serif"
+        android:text="Выберите число пассажиров"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/PassengersAdult"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:fontFamily="serif"
+            android:inputType="textPersonName"
+            android:text="Взрослые"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="                 "/>
+
+        <EditText
+            android:id="@+id/PassengersChildren"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:fontFamily="serif"
+            android:inputType="textPersonName"
+            android:text="Дети"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="                 "/>
+
+        <EditText
+            android:id="@+id/Baby"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:fontFamily="serif"
+            android:inputType="textPersonName"
+            android:text="Младенцы"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Поиск" />
+    </LinearLayout>
+</LinearLayout>

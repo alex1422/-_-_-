@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AviaFly</string>
+    <string name="flyout"></string>
+    <string name="flyin"></string>
+    <string-array name="cities">
+        <item>Москва</item>
+        <item>Санкт-Петербург</item>
+        <item>Париж</item>
+        <item>Великобритания</item>
+        <item>Хабаровск</item>
+        <item>Иркутск</item>
+        <item>Якутия</item>
+        <item>Челябинск</item>
+        <item>Германия</item>
+    </string-array>
+</resources>
